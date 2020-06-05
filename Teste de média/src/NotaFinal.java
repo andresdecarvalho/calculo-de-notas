@@ -154,7 +154,7 @@ public class NotaFinal extends JFrame {
 			}
 		});
 		btnCalcular.setToolTipText("Calcular");
-		btnCalcular.setBounds(716, 416, 128, 23);
+		btnCalcular.setBounds(716, 416, 171, 23);
 		contentPane.add(btnCalcular);
 
 		JButton btnLimpar = new JButton("LIMPAR");
@@ -368,8 +368,8 @@ public class NotaFinal extends JFrame {
 		txtAprovado.setBounds(690, 100, 197, 20);
 		contentPane.add(txtAprovado);
 
-		JLabel lblSituação = new JLabel("SITUA\u00C7\u00C3O");
-		lblSituação.setBounds(740, 83, 96, 14);
+		JLabel lblSituação = new JLabel("SITUA\u00C7\u00C3O DE APROVA\u00C7\u00C3O");
+		lblSituação.setBounds(715, 83, 145, 14);
 		contentPane.add(lblSituação);
 
 		txtAprovado2 = new JTextField();
@@ -379,7 +379,7 @@ public class NotaFinal extends JFrame {
 		
 		JButton btnCalculoGlobalizada = new JButton("CALCULO GLOBALIZADA");
 		btnCalculoGlobalizada.setToolTipText("Calcular");
-		btnCalculoGlobalizada.setBounds(400, 416, 128, 23);
+		btnCalculoGlobalizada.setBounds(370, 416, 158, 23);
 		contentPane.add(btnCalculoGlobalizada);
 		
 		txtDiciplina3 = new JTextField();
