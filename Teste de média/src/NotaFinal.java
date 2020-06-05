@@ -123,7 +123,7 @@ public class NotaFinal extends JFrame {
 		setFont(new Font("Calibri", Font.PLAIN, 12));
 		setResizable(false);
 		setIconImage(Toolkit.getDefaultToolkit().getImage(NotaFinal.class.getResource("/icones/calculadora.png")));
-		setTitle("Calculo de notas - UNICID");
+		setTitle("Calculo de notas - Universidade X");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 925, 489);
 		contentPane = new JPanel();
@@ -619,15 +619,15 @@ public class NotaFinal extends JFrame {
 					+ "\n Sua nota final é de "
 					+ txtNotafinal.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina.getText(), 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado.setText("Necessidade de fazer AF");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado.setText("Necessidade de fazer AF");
 		} else if (media >= 6 && media <= 10.00) {			
 			JOptionPane.showMessageDialog(null,
 					"Sua nota final é de : " + txtNotafinal.getText().replace(".", ",")
 					+ " pontos na disciplina de :" + txtDiciplina.getText() + " \n " + txtAluno.getText()
 					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado.setText("Aprovado");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado.setText("Aprovado");
 		}else {
-			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNICID - ADS 1B NOITE",
+			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
 					JOptionPane.ERROR_MESSAGE);
 		}
 				
@@ -636,15 +636,15 @@ public class NotaFinal extends JFrame {
 			JOptionPane.showMessageDialog(null, " Aluno(a) " + txtAluno.getText() + "\n Sua nota final é de "
 					+ txtNotafinal2.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina2.getText(), 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado2.setText("Necessidade de fazer AF");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado2.setText("Necessidade de fazer AF");
 		} else if (media2 >= 6 && media2 <= 10.00) {			
 			JOptionPane.showMessageDialog(null,
 					"Sua nota final é de : " + txtNotafinal2.getText().replace(".", ",")
 					+ " pontos na disciplina de :" + txtDiciplina2.getText() + " \n " + txtAluno.getText()
 					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado2.setText("Aprovado");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado2.setText("Aprovado");
 		} else {
-			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNICID - ADS 1B NOITE",
+			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
 					JOptionPane.ERROR_MESSAGE);
 		}
 
@@ -653,15 +653,15 @@ public class NotaFinal extends JFrame {
 			JOptionPane.showMessageDialog(null, " Aluno(a) " + txtAluno.getText() + "\n Sua nota final é de "
 					+ txtNotafinal3.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina3.getText(), 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado3.setText("Necessidade de fazer AF");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado3.setText("Necessidade de fazer AF");
 		} else if (media3 >= 6 && media3 <= 10.00) {			
 			JOptionPane.showMessageDialog(null,
 					"Sua nota final é de : " + txtNotafinal3.getText().replace(".", ",")
 					+ " pontos na disciplina de :" + txtDiciplina3.getText() + " \n " + txtAluno.getText()
 					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado3.setText("Aprovado");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado3.setText("Aprovado");
 		} else {
-			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNICID - ADS 1B NOITE",
+			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
 					JOptionPane.ERROR_MESSAGE);
 		}
 								
@@ -670,15 +670,15 @@ public class NotaFinal extends JFrame {
 			JOptionPane.showMessageDialog(null, " Aluno(a) " + txtAluno.getText() + "\n Sua nota final é de "
 					+ txtNotafinal4.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina4.getText(), 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado4.setText("Necessidade de fazer AF");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado4.setText("Necessidade de fazer AF");
 		} else if (media4 >= 6 && media4 <= 10.00) {			
 			JOptionPane.showMessageDialog(null,
 					"Sua nota final é de : " + txtNotafinal4.getText().replace(".", ",")
 					+ " pontos na disciplina de :" + txtDiciplina4.getText() + " \n " + txtAluno.getText()
 					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado4.setText("Aprovado");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado4.setText("Aprovado");
 		} else {
-			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNICID - ADS 1B NOITE",
+			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
 			JOptionPane.ERROR_MESSAGE);
 		}
 
@@ -687,15 +687,15 @@ public class NotaFinal extends JFrame {
 			JOptionPane.showMessageDialog(null, " Aluno(a) " + txtAluno.getText() + "\n Sua nota final é de "
 					+ txtNotafinal5.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina5.getText(), 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado5.setText("Necessidade de fazer AF");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado5.setText("Necessidade de fazer AF");
 		} else if (media5 >= 6 && media5 <= 10.00) {			
 			JOptionPane.showMessageDialog(null,
 					"Sua nota final é de : " + txtNotafinal5.getText().replace(".", ",")
 					+ " pontos na disciplina de :" + txtDiciplina5.getText() + " \n " + txtAluno.getText()
 					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado5.setText("Aprovado");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado5.setText("Aprovado");
 		}else {
-			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNICID - ADS 1B NOITE",
+			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
 					JOptionPane.ERROR_MESSAGE);
 		}
 				
@@ -704,15 +704,15 @@ public class NotaFinal extends JFrame {
 			JOptionPane.showMessageDialog(null, " Aluno(a) " + txtAluno.getText() + "\n Sua nota final é de "
 					+ txtNotafinal6.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina6.getText(), 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado6.setText("Necessidade de fazer AF");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado6.setText("Necessidade de fazer AF");
 		} else if (media6 >= 6 && media6 <= 10.00) {			
 			JOptionPane.showMessageDialog(null,
 					"Sua nota final é de : " + txtNotafinal6.getText().replace(".", ",")
 					+ " pontos na disciplina de :" + txtDiciplina6.getText() + " \n " + txtAluno.getText()
 					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado6.setText("Aprovado");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado6.setText("Aprovado");
 		} else {
-			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNICID - ADS 1B NOITE",
+			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
 					JOptionPane.ERROR_MESSAGE);
 		}
 
@@ -721,15 +721,15 @@ public class NotaFinal extends JFrame {
 			JOptionPane.showMessageDialog(null, " Aluno(a) " + txtAluno.getText() + "\n Sua nota final é de "
 					+ txtNotafinal7.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina7.getText(), 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado7.setText("Necessidade de fazer AF");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado7.setText("Necessidade de fazer AF");
 		} else if (media7 >= 6 && media7 <= 10.00) {			
 			JOptionPane.showMessageDialog(null,
 					"Sua nota final é de : " + txtNotafinal7.getText().replace(".", ",")
 					+ " pontos na disciplina de :" + txtDiciplina7.getText() + " \n " + txtAluno.getText()
 					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado7.setText("Aprovado");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado7.setText("Aprovado");
 		} else {
-			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNICID - ADS 1B NOITE",
+			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
 					JOptionPane.ERROR_MESSAGE);
 		}
 								
@@ -738,15 +738,15 @@ public class NotaFinal extends JFrame {
 			JOptionPane.showMessageDialog(null, " Aluno(a) " + txtAluno.getText() + "\n Sua nota final é de "
 					+ txtNotafinal4.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina8.getText(), 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado8.setText("Necessidade de fazer AF");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado8.setText("Necessidade de fazer AF");
 		} else if (media8 >= 6 && media8 <= 10.00) {			
 			JOptionPane.showMessageDialog(null,
 					"Sua nota final é de : " + txtNotafinal8.getText().replace(".", ",")
 					+ " pontos na disciplina de :" + txtDiciplina8.getText() + " \n " + txtAluno.getText()
 					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado8.setText("Aprovado");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado8.setText("Aprovado");
 		} else {
-			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNICID - ADS 1B NOITE",
+			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
 			JOptionPane.ERROR_MESSAGE);
 		}
 	
@@ -755,15 +755,15 @@ public class NotaFinal extends JFrame {
 			JOptionPane.showMessageDialog(null, " Aluno(a) " + txtAluno.getText() + "\n Sua nota final é de "
 					+ txtNotafinal9.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina9.getText(), 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado9.setText("Necessidade de fazer AF");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado9.setText("Necessidade de fazer AF");
 		} else if (media9 >= 6 && media9 <= 10.00) {			
 			JOptionPane.showMessageDialog(null,
 					"Sua nota final é de : " + txtNotafinal9.getText().replace(".", ",")
 					+ " pontos na disciplina de :" + txtDiciplina9.getText() + " \n " + txtAluno.getText()
 					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
-					"UNICID - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado9.setText("Aprovado");
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado9.setText("Aprovado");
 		} else {
-			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNICID - ADS 1B NOITE",
+			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
 			JOptionPane.ERROR_MESSAGE);
 		}
 				
