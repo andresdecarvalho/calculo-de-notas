@@ -621,61 +621,85 @@ public class NotaFinal extends JFrame {
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina.getText(), 
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado.setText("Necessidade de fazer AF");
 		} else if (media >= 6 && media <= 10.00) {			
-			JOptionPane.showMessageDialog(null,
-					"Sua nota final é de : " + txtNotafinal.getText().replace(".", ",")
-					+ " pontos na disciplina de :" + txtDiciplina.getText() + " \n " + txtAluno.getText()
-					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
+					+ txtNotafinal.getText().replace(".", ",") + " pontos !"
+					+ "\n Aprovado(a) para o proximo semestre, na disciplina de " + txtDiciplina.getText(),
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado.setText("Aprovado");
-		}else {
+		} else {
 			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
-					JOptionPane.ERROR_MESSAGE);
+			JOptionPane.ERROR_MESSAGE);
 		}
 				
 		// materia 2
 		if (media2 >= 0 && media2 <= 5.99) {
-			JOptionPane.showMessageDialog(null, " Aluno(a) " + txtAluno.getText() + "\n Sua nota final é de "
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
 					+ txtNotafinal2.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina2.getText(), 
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado2.setText("Necessidade de fazer AF");
 		} else if (media2 >= 6 && media2 <= 10.00) {			
-			JOptionPane.showMessageDialog(null,
-					"Sua nota final é de : " + txtNotafinal2.getText().replace(".", ",")
-					+ " pontos na disciplina de :" + txtDiciplina2.getText() + " \n " + txtAluno.getText()
-					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
+					+ txtNotafinal2.getText().replace(".", ",") + " pontos !"
+					+ "\n Aprovado(a) para o proximo semestre, na disciplina de " + txtDiciplina2.getText(),
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado2.setText("Aprovado");
 		} else {
 			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
-					JOptionPane.ERROR_MESSAGE);
+			JOptionPane.ERROR_MESSAGE);
 		}
 
 		// materia 3
 		if (media3 >= 0 && media3 <= 5.99) {
-			JOptionPane.showMessageDialog(null, " Aluno(a) " + txtAluno.getText() + "\n Sua nota final é de "
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
 					+ txtNotafinal3.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina3.getText(), 
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado3.setText("Necessidade de fazer AF");
 		} else if (media3 >= 6 && media3 <= 10.00) {			
-			JOptionPane.showMessageDialog(null,
-					"Sua nota final é de : " + txtNotafinal3.getText().replace(".", ",")
-					+ " pontos na disciplina de :" + txtDiciplina3.getText() + " \n " + txtAluno.getText()
-					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
+					+ txtNotafinal3.getText().replace(".", ",") + " pontos !"
+					+ "\n Aprovado(a) para o proximo semestre, na disciplina de " + txtDiciplina3.getText(),
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado3.setText("Aprovado");
 		} else {
 			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
-					JOptionPane.ERROR_MESSAGE);
+			JOptionPane.ERROR_MESSAGE);
 		}
 								
 		// materia 4
 		if (media4 >= 0 && media4 <= 5.99) {
-			JOptionPane.showMessageDialog(null, " Aluno(a) " + txtAluno.getText() + "\n Sua nota final é de "
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
 					+ txtNotafinal4.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina4.getText(), 
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado4.setText("Necessidade de fazer AF");
 		} else if (media4 >= 6 && media4 <= 10.00) {			
-			JOptionPane.showMessageDialog(null,
-					"Sua nota final é de : " + txtNotafinal4.getText().replace(".", ",")
-					+ " pontos na disciplina de :" + txtDiciplina4.getText() + " \n " + txtAluno.getText()
-					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
+					+ txtNotafinal4.getText().replace(".", ",") + " pontos !"
+					+ "\n Aprovado(a) para o proximo semestre, na disciplina de " + txtDiciplina4.getText(),
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado4.setText("Aprovado");
 		} else {
 			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
@@ -684,66 +708,94 @@ public class NotaFinal extends JFrame {
 
 		// materia 5
 		if (media5 >= 0 && media5 <= 5.99) {
-			JOptionPane.showMessageDialog(null, " Aluno(a) " + txtAluno.getText() + "\n Sua nota final é de "
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
 					+ txtNotafinal5.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina5.getText(), 
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado5.setText("Necessidade de fazer AF");
 		} else if (media5 >= 6 && media5 <= 10.00) {			
-			JOptionPane.showMessageDialog(null,
-					"Sua nota final é de : " + txtNotafinal5.getText().replace(".", ",")
-					+ " pontos na disciplina de :" + txtDiciplina5.getText() + " \n " + txtAluno.getText()
-					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
+					+ txtNotafinal5.getText().replace(".", ",") + " pontos !"
+					+ "\n Aprovado(a) para o proximo semestre, na disciplina de " + txtDiciplina5.getText(),
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado5.setText("Aprovado");
-		}else {
+		} else {
 			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
-					JOptionPane.ERROR_MESSAGE);
+			JOptionPane.ERROR_MESSAGE);
 		}
 				
 		// materia 6
 		if (media6 >= 0 && media6 <= 5.99) {
-			JOptionPane.showMessageDialog(null, " Aluno(a) " + txtAluno.getText() + "\n Sua nota final é de "
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
 					+ txtNotafinal6.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina6.getText(), 
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado6.setText("Necessidade de fazer AF");
 		} else if (media6 >= 6 && media6 <= 10.00) {			
-			JOptionPane.showMessageDialog(null,
-					"Sua nota final é de : " + txtNotafinal6.getText().replace(".", ",")
-					+ " pontos na disciplina de :" + txtDiciplina6.getText() + " \n " + txtAluno.getText()
-					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
+					+ txtNotafinal6.getText().replace(".", ",") + " pontos !"
+					+ "\n Aprovado(a) para o proximo semestre, na disciplina de " + txtDiciplina6.getText(), 
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado6.setText("Aprovado");
 		} else {
 			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
-					JOptionPane.ERROR_MESSAGE);
+			JOptionPane.ERROR_MESSAGE);
 		}
 
 		// materia 7
 		if (media7 >= 0 && media7 <= 5.99) {
-			JOptionPane.showMessageDialog(null, " Aluno(a) " + txtAluno.getText() + "\n Sua nota final é de "
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
 					+ txtNotafinal7.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina7.getText(), 
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado7.setText("Necessidade de fazer AF");
 		} else if (media7 >= 6 && media7 <= 10.00) {			
-			JOptionPane.showMessageDialog(null,
-					"Sua nota final é de : " + txtNotafinal7.getText().replace(".", ",")
-					+ " pontos na disciplina de :" + txtDiciplina7.getText() + " \n " + txtAluno.getText()
-					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
+					+ txtNotafinal7.getText().replace(".", ",") + " pontos !"
+					+ "\n Aprovado(a) para o proximo semestre, na disciplina de " + txtDiciplina7.getText(), 
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado7.setText("Aprovado");
 		} else {
 			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
-					JOptionPane.ERROR_MESSAGE);
+			JOptionPane.ERROR_MESSAGE);
 		}
 								
 		// materia 8
 		if (media8 >= 0 && media8 <= 5.99) {
-			JOptionPane.showMessageDialog(null, " Aluno(a) " + txtAluno.getText() + "\n Sua nota final é de "
-					+ txtNotafinal4.getText().replace(".", ",") + " pontos !"
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
+					+ txtNotafinal8.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina8.getText(), 
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado8.setText("Necessidade de fazer AF");
 		} else if (media8 >= 6 && media8 <= 10.00) {			
-			JOptionPane.showMessageDialog(null,
-					"Sua nota final é de : " + txtNotafinal8.getText().replace(".", ",")
-					+ " pontos na disciplina de :" + txtDiciplina8.getText() + " \n " + txtAluno.getText()
-					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
+					+ txtNotafinal8.getText().replace(".", ",") + " pontos !"
+					+ "\n Aprovado(a) para o proximo semestre, na disciplina de " + txtDiciplina8.getText(),
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado8.setText("Aprovado");
 		} else {
 			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
@@ -752,15 +804,22 @@ public class NotaFinal extends JFrame {
 	
 		// materia 9
 		if (media9 >= 0 && media9 <= 5.99) {
-			JOptionPane.showMessageDialog(null, " Aluno(a) " + txtAluno.getText() + "\n Sua nota final é de "
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
 					+ txtNotafinal9.getText().replace(".", ",") + " pontos !"
 					+ "\n Será necessario fazer a prova AF, na disciplina de " + txtDiciplina9.getText(), 
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado9.setText("Necessidade de fazer AF");
 		} else if (media9 >= 6 && media9 <= 10.00) {			
-			JOptionPane.showMessageDialog(null,
-					"Sua nota final é de : " + txtNotafinal9.getText().replace(".", ",")
-					+ " pontos na disciplina de :" + txtDiciplina9.getText() + " \n " + txtAluno.getText()
-					+ " está Aprovado(a) para o proximo semestre!!! Parabéns ", 
+			JOptionPane.showMessageDialog(null, " Aluno(a) :" + txtAluno.getText()
+					+ "\n RGM: " + txtRgm.getText()
+					+ "\n Curso: " + txtCurso.getText() 
+					+ "\n Turma: " + txtTurma.getText()
+					+ "\n Sua nota final é de "
+					+ txtNotafinal9.getText().replace(".", ",") + " pontos !"
+					+ "\n Aprovado(a) para o proximo semestre, na disciplina de " + txtDiciplina9.getText(),
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);txtAprovado9.setText("Aprovado");
 		} else {
 			JOptionPane.showMessageDialog(null, "Digite uma nota valida", "UNIVERSIDADE X - ADS 1B NOITE",
