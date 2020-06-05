@@ -561,11 +561,13 @@ public class NotaFinal extends JFrame {
 	private void calcular() {
 		DecimalFormat formatador = new DecimalFormat("0.00");
 		
+		// tipo da variavel 
 		double media, media2, media3, media4, media5, media6, media7, media8, media9,
 		nota1, nota2, nota3, nota4, nota5, nota6, nota7, nota8, nota9,
 		nota10, nota11, nota12, nota13, nota14, nota15, nota16, nota17, nota18
 		;
 		
+		// atribuição da label text para a variavel, com substituição do ponto para virgula
 		nota1 = Double.parseDouble(txtN1.getText().replace(",", "."));
 		nota2 = Double.parseDouble(txtN2.getText().replace(",", "."));
 		nota3 = Double.parseDouble(txtN4.getText().replace(",", "."));
@@ -585,6 +587,7 @@ public class NotaFinal extends JFrame {
 		nota17 = Double.parseDouble(txtN17.getText().replace(",", "."));
 		nota18 = Double.parseDouble(txtN18.getText().replace(",", "."));
 		
+		// calculo de duas variaveis para atribuir resultado para outra
 		media = nota1 + nota2;
 		media2 = nota3 + nota4;
 		media3 = nota5 + nota6;
@@ -594,7 +597,9 @@ public class NotaFinal extends JFrame {
 		media7 = nota13 + nota14;
 		media8 = nota15 + nota16;
 		media9 = nota17 + nota18;
-
+		
+		
+		// formatar para valor exibido na label text receber numero real 
 		txtNotafinal.setText(formatador.format(media));
 		txtNotafinal2.setText(formatador.format(media2));
 		txtNotafinal3.setText(formatador.format(media3));
