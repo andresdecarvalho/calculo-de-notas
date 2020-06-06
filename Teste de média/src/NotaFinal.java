@@ -91,6 +91,7 @@ public class NotaFinal extends JFrame {
 	private JLabel lblRgm;
 	private JLabel lblCurso;
 	private JLabel lblTurma;
+	private JButton btnMenu;
 
 	/**
 	 * Launch the application.
@@ -116,9 +117,9 @@ public class NotaFinal extends JFrame {
 		setFont(new Font("Calibri", Font.BOLD, 14));
 		setResizable(false);
 		setIconImage(Toolkit.getDefaultToolkit().getImage(NotaFinal.class.getResource("/icones/calculadora.png")));
-		setTitle("Calculo de notas - Universidade X");
+		setTitle("C\u00C1LCULO DE NOTAS - UNIVERSIDADE X");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 833, 485);
+		setBounds(100, 100, 833, 516);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -131,19 +132,19 @@ public class NotaFinal extends JFrame {
 		lblDisciplina.setVerticalTextPosition(SwingConstants.TOP);
 		lblDisciplina.setFont(new Font("Calibri", Font.BOLD, 12));
 		lblDisciplina.setToolTipText("Nome das disciplinas que foram realizadas no semestre atual");
-		lblDisciplina.setBounds(21, 83, 299, 14);
+		lblDisciplina.setBounds(21, 110, 299, 14);
 		contentPane.add(lblDisciplina);
 
 		txtN2 = new JTextField();
 		txtN2.setFont(new Font("Arial", Font.BOLD, 12));
-		txtN2.setBounds(430, 100, 48, 20);
+		txtN2.setBounds(430, 127, 48, 20);
 		contentPane.add(txtN2);
 		txtN2.setColumns(10);
 
 		txtDiciplina = new JTextField();
 		txtDiciplina.setFont(new Font("Arial", Font.BOLD, 12));
 		txtDiciplina.setText("LINGUA PORTUGUESA ");
-		txtDiciplina.setBounds(21, 100, 299, 20);
+		txtDiciplina.setBounds(21, 127, 299, 20);
 		contentPane.add(txtDiciplina);
 		txtDiciplina.setColumns(10);
 
@@ -156,7 +157,7 @@ public class NotaFinal extends JFrame {
 			}
 		});
 		btnCalcular.setToolTipText("Calcular e ver resultado final");
-		btnCalcular.setBounds(586, 405, 171, 23);
+		btnCalcular.setBounds(646, 438, 154, 23);
 		contentPane.add(btnCalcular);
 
 		JButton btnLimpar = new JButton("LIMPAR");
@@ -167,14 +168,14 @@ public class NotaFinal extends JFrame {
 			}
 		});
 		btnLimpar.setToolTipText("Limpar todos os campos");
-		btnLimpar.setBounds(393, 405, 167, 23);
+		btnLimpar.setBounds(482, 438, 154, 23);
 		contentPane.add(btnLimpar);
 
 		JLabel lblN2 = new JLabel("NOTA A2");
 		lblN2.setFont(new Font("Calibri", Font.BOLD, 12));
 		lblN2.setToolTipText("Nota de atividades e provas realizadas");
 		lblN2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblN2.setBounds(415, 83, 74, 14);
+		lblN2.setBounds(415, 110, 74, 14);
 		contentPane.add(lblN2);
 
 		JLabel lblAluno = new JLabel("NOME DO ALUNO");
@@ -192,317 +193,318 @@ public class NotaFinal extends JFrame {
 		txtNotafinal = new JTextField();
 		txtNotafinal.setFont(new Font("Arial", Font.BOLD, 12));
 		txtNotafinal.setColumns(10);
-		txtNotafinal.setBounds(507, 100, 48, 20);
+		txtNotafinal.setBounds(507, 127, 48, 20);
 		contentPane.add(txtNotafinal);
 
 		JLabel lblNotafinal = new JLabel("NOTA FINAL");
 		lblNotafinal.setFont(new Font("Calibri", Font.BOLD, 12));
 		lblNotafinal.setToolTipText("Nota final");
 		lblNotafinal.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNotafinal.setBounds(499, 83, 72, 14);
+		lblNotafinal.setBounds(490, 110, 81, 14);
 		contentPane.add(lblNotafinal);
 
 		txtDiciplina2 = new JTextField();
 		txtDiciplina2.setFont(new Font("Arial", Font.BOLD, 12));
 		txtDiciplina2.setText("FUNDAMENTOS DE SISTEMAS DE INFORMA\u00C7\u00C3O ");
 		txtDiciplina2.setColumns(10);
-		txtDiciplina2.setBounds(21, 131, 299, 20);
+		txtDiciplina2.setBounds(21, 158, 299, 20);
 		contentPane.add(txtDiciplina2);
 
 		txtN4 = new JTextField();
 		txtN4.setFont(new Font("Arial", Font.BOLD, 12));
 		txtN4.setColumns(10);
-		txtN4.setBounds(430, 131, 48, 20);
+		txtN4.setBounds(430, 158, 48, 20);
 		contentPane.add(txtN4);
 
 		txtNotafinal2 = new JTextField();
 		txtNotafinal2.setFont(new Font("Arial", Font.BOLD, 12));
 		txtNotafinal2.setColumns(10);
-		txtNotafinal2.setBounds(507, 131, 48, 20);
+		txtNotafinal2.setBounds(507, 158, 48, 20);
 		contentPane.add(txtNotafinal2);
 
 		txtAprovado = new JTextField();
 		txtAprovado.setFont(new Font("Arial", Font.BOLD, 12));
 		txtAprovado.setColumns(10);
-		txtAprovado.setBounds(586, 100, 214, 20);
+		txtAprovado.setBounds(586, 127, 214, 20);
 		contentPane.add(txtAprovado);
 
 		JLabel lblSituacao = new JLabel("SITUA\u00C7\u00C3O DE APROVA\u00C7\u00C3O");
+		lblSituacao.setVerticalAlignment(SwingConstants.BOTTOM);
 		lblSituacao.setFont(new Font("Calibri", Font.BOLD, 12));
 		lblSituacao.setToolTipText("Aqui \u00E9 mostrado qual a situa\u00E7\u00E3o do aluno referente a disciplina ");
-		lblSituacao.setBounds(585, 83, 198, 14);
+		lblSituacao.setBounds(586, 102, 198, 23);
 		contentPane.add(lblSituacao);
 
 		txtAprovado2 = new JTextField();
 		txtAprovado2.setFont(new Font("Arial", Font.BOLD, 12));
 		txtAprovado2.setColumns(10);
-		txtAprovado2.setBounds(586, 131, 214, 20);
+		txtAprovado2.setBounds(586, 158, 214, 20);
 		contentPane.add(txtAprovado2);
 
 		txtDiciplina3 = new JTextField();
 		txtDiciplina3.setFont(new Font("Arial", Font.BOLD, 12));
 		txtDiciplina3.setText("SISTEMAS OPERACIONAIS ");
 		txtDiciplina3.setColumns(10);
-		txtDiciplina3.setBounds(21, 162, 299, 20);
+		txtDiciplina3.setBounds(21, 189, 299, 20);
 		contentPane.add(txtDiciplina3);
 
 		txtDiciplina4 = new JTextField();
 		txtDiciplina4.setFont(new Font("Arial", Font.BOLD, 12));
 		txtDiciplina4.setText("ENGENHARIA DE REQUISITOS ");
 		txtDiciplina4.setColumns(10);
-		txtDiciplina4.setBounds(21, 192, 299, 20);
+		txtDiciplina4.setBounds(21, 219, 299, 20);
 		contentPane.add(txtDiciplina4);
 
 		txtDiciplina5 = new JTextField();
 		txtDiciplina5.setFont(new Font("Arial", Font.BOLD, 12));
 		txtDiciplina5.setText("ORGANIZA\u00C7\u00C3O E ARQUITETURA DE COMPUTADORES ");
 		txtDiciplina5.setColumns(10);
-		txtDiciplina5.setBounds(21, 223, 299, 20);
+		txtDiciplina5.setBounds(21, 250, 299, 20);
 		contentPane.add(txtDiciplina5);
 
 		txtDiciplina6 = new JTextField();
 		txtDiciplina6.setFont(new Font("Arial", Font.BOLD, 12));
 		txtDiciplina6.setText("APLICA\u00C7\u00D5ES PARA INTERNET");
 		txtDiciplina6.setColumns(10);
-		txtDiciplina6.setBounds(21, 254, 299, 20);
+		txtDiciplina6.setBounds(21, 281, 299, 20);
 		contentPane.add(txtDiciplina6);
 
 		txtDiciplina7 = new JTextField();
 		txtDiciplina7.setFont(new Font("Arial", Font.BOLD, 12));
 		txtDiciplina7.setText("PROGRAMA\u00C7\u00C3O DE COMPUTADORES");
 		txtDiciplina7.setColumns(10);
-		txtDiciplina7.setBounds(21, 285, 299, 20);
+		txtDiciplina7.setBounds(21, 312, 299, 20);
 		contentPane.add(txtDiciplina7);
 
 		txtDiciplina8 = new JTextField();
 		txtDiciplina8.setFont(new Font("Arial", Font.BOLD, 12));
 		txtDiciplina8.setText("INTERFACE HUMANO-COMPUTADOR");
 		txtDiciplina8.setColumns(10);
-		txtDiciplina8.setBounds(21, 316, 299, 20);
+		txtDiciplina8.setBounds(21, 343, 299, 20);
 		contentPane.add(txtDiciplina8);
 
 		txtDiciplina9 = new JTextField();
 		txtDiciplina9.setFont(new Font("Arial", Font.BOLD, 12));
 		txtDiciplina9.setText("MODELAGEM DE NEG\u00D3CIOS");
 		txtDiciplina9.setColumns(10);
-		txtDiciplina9.setBounds(21, 347, 299, 20);
+		txtDiciplina9.setBounds(21, 374, 299, 20);
 		contentPane.add(txtDiciplina9);
 
 		txtN6 = new JTextField();
 		txtN6.setFont(new Font("Arial", Font.BOLD, 12));
 		txtN6.setColumns(10);
-		txtN6.setBounds(430, 162, 48, 20);
+		txtN6.setBounds(430, 189, 48, 20);
 		contentPane.add(txtN6);
 
 		txtN8 = new JTextField();
 		txtN8.setFont(new Font("Arial", Font.BOLD, 12));
 		txtN8.setColumns(10);
-		txtN8.setBounds(430, 192, 48, 20);
+		txtN8.setBounds(430, 219, 48, 20);
 		contentPane.add(txtN8);
 
 		txtN10 = new JTextField();
 		txtN10.setFont(new Font("Arial", Font.BOLD, 12));
 		txtN10.setColumns(10);
-		txtN10.setBounds(430, 223, 48, 20);
+		txtN10.setBounds(430, 250, 48, 20);
 		contentPane.add(txtN10);
 
 		txtN12 = new JTextField();
 		txtN12.setFont(new Font("Arial", Font.BOLD, 12));
 		txtN12.setColumns(10);
-		txtN12.setBounds(430, 254, 48, 20);
+		txtN12.setBounds(430, 281, 48, 20);
 		contentPane.add(txtN12);
 
 		txtN14 = new JTextField();
 		txtN14.setFont(new Font("Arial", Font.BOLD, 12));
 		txtN14.setColumns(10);
-		txtN14.setBounds(430, 285, 48, 20);
+		txtN14.setBounds(430, 312, 48, 20);
 		contentPane.add(txtN14);
 
 		txtN16 = new JTextField();
 		txtN16.setFont(new Font("Arial", Font.BOLD, 12));
 		txtN16.setColumns(10);
-		txtN16.setBounds(430, 316, 48, 20);
+		txtN16.setBounds(430, 343, 48, 20);
 		contentPane.add(txtN16);
 
 		txtN18 = new JTextField();
 		txtN18.setFont(new Font("Arial", Font.BOLD, 12));
 		txtN18.setColumns(10);
-		txtN18.setBounds(430, 347, 48, 20);
+		txtN18.setBounds(430, 374, 48, 20);
 		contentPane.add(txtN18);
 
 		txtNotafinal3 = new JTextField();
 		txtNotafinal3.setFont(new Font("Arial", Font.BOLD, 12));
 		txtNotafinal3.setColumns(10);
-		txtNotafinal3.setBounds(507, 162, 48, 20);
+		txtNotafinal3.setBounds(507, 189, 48, 20);
 		contentPane.add(txtNotafinal3);
 
 		txtNotafinal4 = new JTextField();
 		txtNotafinal4.setFont(new Font("Arial", Font.BOLD, 12));
 		txtNotafinal4.setColumns(10);
-		txtNotafinal4.setBounds(507, 192, 48, 20);
+		txtNotafinal4.setBounds(507, 219, 48, 20);
 		contentPane.add(txtNotafinal4);
 
 		txtNotafinal7 = new JTextField();
 		txtNotafinal7.setFont(new Font("Arial", Font.BOLD, 12));
 		txtNotafinal7.setColumns(10);
-		txtNotafinal7.setBounds(507, 285, 48, 20);
+		txtNotafinal7.setBounds(507, 312, 48, 20);
 		contentPane.add(txtNotafinal7);
 
 		txtNotafinal6 = new JTextField();
 		txtNotafinal6.setFont(new Font("Arial", Font.BOLD, 12));
 		txtNotafinal6.setColumns(10);
-		txtNotafinal6.setBounds(507, 254, 48, 20);
+		txtNotafinal6.setBounds(507, 281, 48, 20);
 		contentPane.add(txtNotafinal6);
 
 		txtNotafinal5 = new JTextField();
 		txtNotafinal5.setFont(new Font("Arial", Font.BOLD, 12));
 		txtNotafinal5.setColumns(10);
-		txtNotafinal5.setBounds(507, 223, 48, 20);
+		txtNotafinal5.setBounds(507, 250, 48, 20);
 		contentPane.add(txtNotafinal5);
 
 		txtNotafinal8 = new JTextField();
 		txtNotafinal8.setFont(new Font("Arial", Font.BOLD, 12));
 		txtNotafinal8.setColumns(10);
-		txtNotafinal8.setBounds(507, 316, 48, 20);
+		txtNotafinal8.setBounds(507, 343, 48, 20);
 		contentPane.add(txtNotafinal8);
 
 		txtNotafinal9 = new JTextField();
 		txtNotafinal9.setFont(new Font("Arial", Font.BOLD, 12));
 		txtNotafinal9.setColumns(10);
-		txtNotafinal9.setBounds(507, 347, 48, 20);
+		txtNotafinal9.setBounds(507, 374, 48, 20);
 		contentPane.add(txtNotafinal9);
 
 		txtAprovado3 = new JTextField();
 		txtAprovado3.setFont(new Font("Arial", Font.BOLD, 12));
 		txtAprovado3.setColumns(10);
-		txtAprovado3.setBounds(586, 162, 214, 20);
+		txtAprovado3.setBounds(586, 189, 214, 20);
 		contentPane.add(txtAprovado3);
 
 		txtAprovado4 = new JTextField();
 		txtAprovado4.setFont(new Font("Arial", Font.BOLD, 12));
 		txtAprovado4.setColumns(10);
-		txtAprovado4.setBounds(586, 192, 214, 20);
+		txtAprovado4.setBounds(586, 219, 214, 20);
 		contentPane.add(txtAprovado4);
 
 		txtAprovado5 = new JTextField();
 		txtAprovado5.setFont(new Font("Arial", Font.BOLD, 12));
 		txtAprovado5.setColumns(10);
-		txtAprovado5.setBounds(586, 223, 214, 20);
+		txtAprovado5.setBounds(586, 250, 214, 20);
 		contentPane.add(txtAprovado5);
 
 		txtAprovado6 = new JTextField();
 		txtAprovado6.setFont(new Font("Arial", Font.BOLD, 12));
 		txtAprovado6.setColumns(10);
-		txtAprovado6.setBounds(586, 254, 214, 20);
+		txtAprovado6.setBounds(586, 281, 214, 20);
 		contentPane.add(txtAprovado6);
 
 		txtAprovado7 = new JTextField();
 		txtAprovado7.setFont(new Font("Arial", Font.BOLD, 12));
 		txtAprovado7.setColumns(10);
-		txtAprovado7.setBounds(586, 285, 214, 20);
+		txtAprovado7.setBounds(586, 312, 214, 20);
 		contentPane.add(txtAprovado7);
 
 		txtAprovado8 = new JTextField();
 		txtAprovado8.setFont(new Font("Arial", Font.BOLD, 12));
 		txtAprovado8.setColumns(10);
-		txtAprovado8.setBounds(586, 316, 214, 20);
+		txtAprovado8.setBounds(586, 343, 214, 20);
 		contentPane.add(txtAprovado8);
 
 		txtAprovado9 = new JTextField();
 		txtAprovado9.setFont(new Font("Arial", Font.BOLD, 12));
 		txtAprovado9.setColumns(10);
-		txtAprovado9.setBounds(586, 347, 214, 20);
+		txtAprovado9.setBounds(586, 374, 214, 20);
 		contentPane.add(txtAprovado9);
 
 		txtRgm = new JTextField();
 		txtRgm.setFont(new Font("Arial", Font.BOLD, 12));
 		txtRgm.setColumns(10);
-		txtRgm.setBounds(330, 24, 143, 20);
+		txtRgm.setBounds(353, 24, 125, 20);
 		contentPane.add(txtRgm);
 
 		txtCurso = new JTextField();
 		txtCurso.setText("AN\u00C1LISE E DESENVOLVIMENTO DE SISTEMAS");
 		txtCurso.setFont(new Font("Arial", Font.BOLD, 12));
 		txtCurso.setColumns(10);
-		txtCurso.setBounds(483, 24, 221, 20);
+		txtCurso.setBounds(507, 24, 293, 20);
 		contentPane.add(txtCurso);
 
 		txtTurma = new JTextField();
 		txtTurma.setText("1B");
 		txtTurma.setFont(new Font("Arial", Font.BOLD, 12));
 		txtTurma.setColumns(10);
-		txtTurma.setBounds(714, 24, 86, 20);
+		txtTurma.setBounds(21, 66, 86, 20);
 		contentPane.add(txtTurma);
 
 		lblRgm = new JLabel("RGM");
 		lblRgm.setFont(new Font("Calibri", Font.BOLD, 12));
 		lblRgm.setToolTipText("Digite seu Registro geral de matricula");
-		lblRgm.setBounds(330, 11, 120, 14);
+		lblRgm.setBounds(353, 11, 120, 14);
 		contentPane.add(lblRgm);
 
 		lblCurso = new JLabel("CURSO");
 		lblCurso.setFont(new Font("Calibri", Font.BOLD, 12));
 		lblCurso.setToolTipText("Curso atual");
-		lblCurso.setBounds(481, 11, 120, 14);
+		lblCurso.setBounds(507, 11, 120, 14);
 		contentPane.add(lblCurso);
 
 		lblTurma = new JLabel("TURMA");
 		lblTurma.setFont(new Font("Calibri", Font.BOLD, 12));
 		lblTurma.setToolTipText("Turma atual");
-		lblTurma.setBounds(714, 11, 120, 14);
+		lblTurma.setBounds(21, 53, 120, 14);
 		contentPane.add(lblTurma);
 
 		txtN3 = new JTextField();
 		txtN3.setFont(new Font("Arial", Font.BOLD, 12));
-		txtN3.setBounds(353, 131, 47, 20);
+		txtN3.setBounds(353, 158, 47, 20);
 		contentPane.add(txtN3);
 		txtN3.setColumns(10);
 
 		txtN1 = new JTextField();
 		txtN1.setFont(new Font("Arial", Font.BOLD, 12));
-		txtN1.setBounds(353, 100, 47, 20);
+		txtN1.setBounds(353, 127, 47, 20);
 		contentPane.add(txtN1);
 		txtN1.setColumns(10);
 
 		txtN5 = new JTextField();
 		txtN5.setFont(new Font("Arial", Font.BOLD, 12));
-		txtN5.setBounds(353, 162, 47, 20);
+		txtN5.setBounds(353, 189, 47, 20);
 		contentPane.add(txtN5);
 		txtN5.setColumns(10);
 
 		txtN7 = new JTextField();
 		txtN7.setFont(new Font("Arial", Font.BOLD, 12));
-		txtN7.setBounds(353, 193, 47, 20);
+		txtN7.setBounds(353, 220, 47, 20);
 		contentPane.add(txtN7);
 		txtN7.setColumns(10);
 
 		txtN9 = new JTextField();
 		txtN9.setFont(new Font("Arial", Font.BOLD, 12));
-		txtN9.setBounds(353, 224, 47, 20);
+		txtN9.setBounds(353, 251, 47, 20);
 		contentPane.add(txtN9);
 		txtN9.setColumns(10);
 
 		txtN11 = new JTextField();
 		txtN11.setFont(new Font("Arial", Font.BOLD, 12));
-		txtN11.setBounds(353, 255, 47, 20);
+		txtN11.setBounds(353, 282, 47, 20);
 		contentPane.add(txtN11);
 		txtN11.setColumns(10);
 
 		txtN13 = new JTextField();
 		txtN13.setFont(new Font("Arial", Font.BOLD, 12));
-		txtN13.setBounds(353, 286, 47, 20);
+		txtN13.setBounds(353, 313, 47, 20);
 		contentPane.add(txtN13);
 		txtN13.setColumns(10);
 
 		txtN15 = new JTextField();
 		txtN15.setFont(new Font("Arial", Font.BOLD, 12));
-		txtN15.setBounds(353, 317, 47, 20);
+		txtN15.setBounds(353, 344, 47, 20);
 		contentPane.add(txtN15);
 		txtN15.setColumns(10);
 
 		txtN17 = new JTextField();
 		txtN17.setFont(new Font("Arial", Font.BOLD, 12));
-		txtN17.setBounds(353, 347, 47, 20);
+		txtN17.setBounds(353, 374, 47, 20);
 		contentPane.add(txtN17);
 		txtN17.setColumns(10);
 
@@ -510,14 +512,21 @@ public class NotaFinal extends JFrame {
 		lblMedia.setFont(new Font("Calibri", Font.BOLD, 12));
 		lblMedia.setToolTipText("Nota referente a prova globalizada");
 		lblMedia.setHorizontalAlignment(SwingConstants.CENTER);
-		lblMedia.setBounds(341, 83, 74, 14);
+		lblMedia.setBounds(341, 110, 74, 14);
 		contentPane.add(lblMedia);
 
 		JLabel lblNewLabel = new JLabel("DEVELOPED BY ANDR\u00C9 CARVALHO ");
 		lblNewLabel.setFont(new Font("Calibri", Font.BOLD, 12));
 		lblNewLabel.setToolTipText("");
-		lblNewLabel.setBounds(40, 399, 249, 20);
+		lblNewLabel.setBounds(21, 441, 249, 20);
 		contentPane.add(lblNewLabel);
+		
+		btnMenu = new JButton("MENU");
+		btnMenu.setEnabled(false);
+		btnMenu.setToolTipText("Retorna ao menu anterior ");
+		btnMenu.setFont(new Font("Arial", Font.BOLD, 12));
+		btnMenu.setBounds(316, 438, 154, 23);
+		contentPane.add(btnMenu);
 	}// fim do construtor (parte de frames)
 
 	// método para calcular a média de notas
