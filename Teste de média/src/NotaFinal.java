@@ -124,6 +124,7 @@ public class NotaFinal extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		this.setLocationRelativeTo(null); //faz o frame iniciar no meio da tela
 
 		JLabel lblDisciplina = new JLabel("DISCIPLINA ");
 		lblDisciplina.setAlignmentY(Component.BOTTOM_ALIGNMENT);
@@ -526,7 +527,7 @@ public class NotaFinal extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				Principal principal = new Principal();
 				principal.setVisible(true);
-				dispose();
+				dispose();//faz a janela fechar
 			}
 		});
 		btnMenu.setToolTipText("Retorna ao menu anterior ");
