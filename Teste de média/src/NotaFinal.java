@@ -113,7 +113,7 @@ public class NotaFinal extends JFrame {
 	 * Create the frame. metodo construtor (linhas de codigo que criam os frames)
 	 */
 	public NotaFinal() {
-		setBackground(SystemColor.textHighlight);
+		setBackground(Color.LIGHT_GRAY);
 		setFont(new Font("Calibri", Font.BOLD, 14));
 		setResizable(false);
 		setIconImage(Toolkit.getDefaultToolkit().getImage(NotaFinal.class.getResource("/icones/calculadora.png")));
