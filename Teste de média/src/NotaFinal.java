@@ -117,8 +117,8 @@ public class NotaFinal extends JFrame {
 		setFont(new Font("Calibri", Font.BOLD, 14));
 		setResizable(false);
 		setIconImage(Toolkit.getDefaultToolkit().getImage(NotaFinal.class.getResource("/icones/calculadora.png")));
-		setTitle("C\u00C1LCULO DE NOTAS - UNIVERSIDADE X");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("C\u00C1LCULO DE NOTAS - 1\u00B0 SEMESTRE");
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 833, 516);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -521,8 +521,14 @@ public class NotaFinal extends JFrame {
 		lblNewLabel.setBounds(21, 441, 249, 20);
 		contentPane.add(lblNewLabel);
 		
-		btnMenu = new JButton("MENU");
-		btnMenu.setEnabled(false);
+		btnMenu = new JButton("VOLTAR");
+		btnMenu.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Principal principal = new Principal();
+				principal.setVisible(true);
+				dispose();
+			}
+		});
 		btnMenu.setToolTipText("Retorna ao menu anterior ");
 		btnMenu.setFont(new Font("Arial", Font.BOLD, 12));
 		btnMenu.setBounds(316, 438, 154, 23);
