@@ -140,12 +140,8 @@ public class Principal extends JFrame {
 		contentPane.add(lblData);
 	}
 	
-		private void alterarLabel() {// metodo pra mostrar data e hora no lugar do Frame
-		//Date data = new Date();
-		//DateFormat formatador =
-        //DateFormat.getDateInstance(DateFormat.FULL);		
-		//lblData.setText(formatador.format(data));
-		
+		private void alterarLabel() {// metodo pra mostrar data e hora no lugar da label
+
 		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
         LocalDateTime data = LocalDateTime.now();
 
