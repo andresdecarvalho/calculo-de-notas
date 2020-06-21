@@ -113,6 +113,7 @@ public class NotaFinal extends JFrame {
 	 * Create the frame. metodo construtor (linhas de codigo que criam os frames)
 	 */
 	public NotaFinal() {
+		setResizable(false);
 		setBackground(Color.LIGHT_GRAY);
 		setFont(new Font("Calibri", Font.BOLD, 14));
 		setIconImage(Toolkit.getDefaultToolkit().getImage(NotaFinal.class.getResource("/icones/calculadora.png")));
@@ -544,7 +545,9 @@ public class NotaFinal extends JFrame {
 				|| txtN10.getText().isEmpty() || txtN11.getText().isEmpty() || txtN12.getText().isEmpty()
 				|| txtN13.getText().isEmpty() || txtN14.getText().isEmpty() || txtN15.getText().isEmpty()
 				|| txtN16.getText().isEmpty() || txtN17.getText().isEmpty() || txtN18.getText().isEmpty()) {
-			JOptionPane.showMessageDialog(null, "Preencha as notas A1 e A2, para obter as notas finais e a situação de aprovação !");
+			JOptionPane.showMessageDialog(null,
+					"Preencha as notas A1 e A2, para obter as notas finais e a situação de aprovação !",
+					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);
 		}
 
 		DecimalFormat formatador = new DecimalFormat("0.00");
