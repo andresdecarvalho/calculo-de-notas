@@ -115,7 +115,6 @@ public class NotaFinal extends JFrame {
 	public NotaFinal() {
 		setBackground(Color.LIGHT_GRAY);
 		setFont(new Font("Calibri", Font.BOLD, 14));
-		setResizable(false);
 		setIconImage(Toolkit.getDefaultToolkit().getImage(NotaFinal.class.getResource("/icones/calculadora.png")));
 		setTitle("C\u00C1LCULO DE NOTAS - 1\u00B0 SEMESTRE");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -124,7 +123,7 @@ public class NotaFinal extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		this.setLocationRelativeTo(null); //faz o frame iniciar no meio da tela
+		this.setLocationRelativeTo(null); // faz o frame iniciar no meio da tela
 
 		JLabel lblDisciplina = new JLabel("DISCIPLINA ");
 		lblDisciplina.setAlignmentY(Component.BOTTOM_ALIGNMENT);
@@ -521,13 +520,13 @@ public class NotaFinal extends JFrame {
 		lblNewLabel.setToolTipText("");
 		lblNewLabel.setBounds(21, 441, 249, 20);
 		contentPane.add(lblNewLabel);
-		
+
 		btnMenu = new JButton("VOLTAR");
 		btnMenu.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Principal principal = new Principal();
 				principal.setVisible(true);
-				dispose();//faz a janela fechar
+				dispose();// faz a janela fechar
 			}
 		});
 		btnMenu.setToolTipText("Retorna ao menu anterior ");
@@ -538,11 +537,21 @@ public class NotaFinal extends JFrame {
 
 	// método para calcular a média de notas
 	private void calcular() {
+
+		if (txtN1.getText().isEmpty() || txtN2.getText().isEmpty() || txtN3.getText().isEmpty()
+				|| txtN4.getText().isEmpty() || txtN5.getText().isEmpty() || txtN6.getText().isEmpty()
+				|| txtN7.getText().isEmpty() || txtN8.getText().isEmpty() || txtN9.getText().isEmpty()
+				|| txtN10.getText().isEmpty() || txtN11.getText().isEmpty() || txtN12.getText().isEmpty()
+				|| txtN13.getText().isEmpty() || txtN14.getText().isEmpty() || txtN15.getText().isEmpty()
+				|| txtN16.getText().isEmpty() || txtN17.getText().isEmpty() || txtN18.getText().isEmpty()) {
+			JOptionPane.showMessageDialog(null, "Preencha as notas A1 e A2, para obter as notas finais e a situação de aprovação !");
+		}
+
 		DecimalFormat formatador = new DecimalFormat("0.00");
 
 		// tipo da variavel
 		double media, media2, media3, media4, media5, media6, media7, media8, media9, nota1, nota2, nota3, nota4, nota5,
-		nota6, nota7, nota8, nota9, nota10, nota11, nota12, nota13, nota14, nota15, nota16, nota17, nota18;
+				nota6, nota7, nota8, nota9, nota10, nota11, nota12, nota13, nota14, nota15, nota16, nota17, nota18;
 
 		// atribuição da label text para a variavel, com substituição do ponto para
 		// virgula
