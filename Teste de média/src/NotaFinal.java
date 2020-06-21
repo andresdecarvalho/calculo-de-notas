@@ -512,7 +512,7 @@ public class NotaFinal extends JFrame {
 		lblMedia.setFont(new Font("Calibri", Font.BOLD, 12));
 		lblMedia.setToolTipText("Nota referente a prova globalizada");
 		lblMedia.setHorizontalAlignment(SwingConstants.CENTER);
-		lblMedia.setBounds(341, 110, 74, 14);
+		lblMedia.setBounds(330, 110, 91, 14);
 		contentPane.add(lblMedia);
 
 		JLabel lblNewLabel = new JLabel("DEVELOPED BY ANDR\u00C9 CARVALHO ");
