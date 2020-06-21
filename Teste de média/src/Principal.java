@@ -22,6 +22,8 @@ import java.text.SimpleDateFormat;//import data e hora
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.*;
+import java.awt.Toolkit;
+import javax.swing.ImageIcon;
 
 
 public class Principal extends JFrame {
@@ -49,6 +51,7 @@ public class Principal extends JFrame {
 	 * Create the frame.
 	 */
 	public Principal() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Principal.class.getResource("/icones/calculadora1.png")));
 		
 		addWindowListener(new WindowAdapter() {//ação para modificar a label e mostrr data e hora
 			public void windowActivated(WindowEvent e) {
@@ -60,7 +63,7 @@ public class Principal extends JFrame {
 		setTitle("CALCULADORA DE M\u00C9DIAS UNIVERSITARIAS ");
 		setFont(new Font("Calibri", Font.BOLD, 14));
 		setResizable(false);
-		setBounds(100, 100, 467, 479);
+		setBounds(100, 100, 473, 321);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -76,7 +79,7 @@ public class Principal extends JFrame {
 			}
 		});
 		btnNewButton.setFont(new Font("Arial", Font.BOLD, 11));
-		btnNewButton.setBounds(69, 97, 115, 115);
+		btnNewButton.setBounds(261, 54, 145, 30);
 		contentPane.add(btnNewButton);
 		
 		JButton btnSemestre = new JButton("2\u00B0 SEMESTRE");
@@ -85,12 +88,12 @@ public class Principal extends JFrame {
 			}
 		});
 		btnSemestre.setFont(new Font("Arial", Font.BOLD, 11));
-		btnSemestre.setBounds(267, 97, 115, 115);
+		btnSemestre.setBounds(261, 95, 145, 30);
 		contentPane.add(btnSemestre);
 		
 		JButton btnSemestre_1 = new JButton("3\u00B0 \r\nSEMESTRE");
 		btnSemestre_1.setFont(new Font("Arial", Font.BOLD, 11));
-		btnSemestre_1.setBounds(69, 278, 115, 115);
+		btnSemestre_1.setBounds(261, 136, 145, 30);
 		contentPane.add(btnSemestre_1);
 		
 		JButton btnSemestre_2 = new JButton("4\u00B0 SEMESTRE");
@@ -99,45 +102,41 @@ public class Principal extends JFrame {
 			}
 		});
 		btnSemestre_2.setFont(new Font("Arial", Font.BOLD, 11));
-		btnSemestre_2.setBounds(267, 278, 115, 115);
+		btnSemestre_2.setBounds(261, 177, 145, 30);
 		contentPane.add(btnSemestre_2);
 		
 		JLabel lblNewLabel = new JLabel("ESCOLHA UM SEMESTRE");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setFont(new Font("Arial", Font.BOLD, 12));
-		lblNewLabel.setBounds(69, 35, 313, 14);
+		lblNewLabel.setBounds(234, 29, 204, 14);
 		contentPane.add(lblNewLabel);
-		
-		JLabel lblNewLabel_1 = new JLabel("1\u00B0 SEMESTRE");
-		lblNewLabel_1.setFont(new Font("Calibri", Font.BOLD, 12));
-		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1.setBounds(69, 77, 115, 14);
-		contentPane.add(lblNewLabel_1);
-		
-		JLabel lblNewLabel_1_1 = new JLabel("2\u00B0 SEMESTRE");
-		lblNewLabel_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_1.setFont(new Font("Calibri", Font.BOLD, 12));
-		lblNewLabel_1_1.setBounds(267, 77, 115, 14);
-		contentPane.add(lblNewLabel_1_1);
-		
-		JLabel lblNewLabel_1_2 = new JLabel("3\u00B0 SEMESTRE");
-		lblNewLabel_1_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_2.setFont(new Font("Calibri", Font.BOLD, 12));
-		lblNewLabel_1_2.setBounds(69, 263, 115, 14);
-		contentPane.add(lblNewLabel_1_2);
-		
-		JLabel lblNewLabel_1_3 = new JLabel("4\u00B0 SEMESTRE");
-		lblNewLabel_1_3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_3.setFont(new Font("Calibri", Font.BOLD, 12));
-		lblNewLabel_1_3.setBounds(267, 263, 115, 14);
-		contentPane.add(lblNewLabel_1_3);
 		
 		lblData = new JLabel("");
 		lblData.setLabelFor(this);
 		lblData.setHorizontalAlignment(SwingConstants.CENTER);
 		lblData.setFont(new Font("Arial", Font.BOLD, 12));
-		lblData.setBounds(69, 412, 313, 14);
+		lblData.setBounds(261, 231, 145, 14);
 		contentPane.add(lblData);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setToolTipText("");
+		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_1.setIcon(new ImageIcon(Principal.class.getResource("/icones/facul.png")));
+		lblNewLabel_1.setBounds(55, 54, 145, 153);
+		contentPane.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("UNIVERSIDADE X");
+		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_2.setFont(new Font("Arial", Font.BOLD, 12));
+		lblNewLabel_2.setBounds(55, 29, 145, 14);
+		contentPane.add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_3 = new JLabel("DEVELOPED BY ANDR\u00C9 CARVALHO ");
+		lblNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_3.setToolTipText("");
+		lblNewLabel_3.setFont(new Font("Calibri", Font.BOLD, 12));
+		lblNewLabel_3.setBounds(10, 231, 249, 20);
+		contentPane.add(lblNewLabel_3);
 	}
 	
 		private void alterarLabel() {// metodo pra mostrar data e hora no lugar do Frame

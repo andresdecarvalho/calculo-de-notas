@@ -158,7 +158,7 @@ public class NotaFinal extends JFrame {
 			}
 		});
 		btnCalcular.setToolTipText("Calcular e ver resultado final");
-		btnCalcular.setBounds(548, 438, 120, 23);
+		btnCalcular.setBounds(671, 438, 120, 23);
 		contentPane.add(btnCalcular);
 
 		JButton btnLimpar = new JButton("LIMPAR");
@@ -169,7 +169,7 @@ public class NotaFinal extends JFrame {
 			}
 		});
 		btnLimpar.setToolTipText("Limpar todos os campos");
-		btnLimpar.setBounds(415, 438, 120, 23);
+		btnLimpar.setBounds(538, 438, 120, 23);
 		contentPane.add(btnLimpar);
 
 		JLabel lblN2 = new JLabel("NOTA A2");
@@ -532,22 +532,8 @@ public class NotaFinal extends JFrame {
 		});
 		btnMenu.setToolTipText("Retorna ao menu anterior ");
 		btnMenu.setFont(new Font("Arial", Font.BOLD, 12));
-		btnMenu.setBounds(280, 438, 120, 23);
+		btnMenu.setBounds(403, 438, 120, 23);
 		contentPane.add(btnMenu);
-		
-		JButton btnImprimir = new JButton("IMPRIMIR");
-		btnImprimir.setEnabled(false);
-		btnImprimir.setToolTipText("Retorna ao menu anterior ");
-		btnImprimir.setFont(new Font("Arial", Font.BOLD, 12));
-		btnImprimir.setBounds(680, 438, 120, 23);
-		contentPane.add(btnImprimir);
-		
-		JButton btnAjuda = new JButton("AJUDA");
-		btnAjuda.setToolTipText("Retorna ao menu anterior ");
-		btnAjuda.setFont(new Font("Arial", Font.BOLD, 12));
-		btnAjuda.setEnabled(false);
-		btnAjuda.setBounds(680, 65, 120, 23);
-		contentPane.add(btnAjuda);
 	}// fim do construtor (parte de frames)
 
 	// método para calcular a média de notas
