@@ -3,5 +3,5 @@
 <img src="02.PNG">
 <br>
 <h4>Tela de semestre</h4>
-<img src="01PNG">
+<img src="01.PNG">
 <br>
