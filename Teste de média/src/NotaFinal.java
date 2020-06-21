@@ -34,6 +34,7 @@ import java.beans.JavaBean;
 import java.awt.Dimension;
 import java.awt.Component;
 import javax.swing.DropMode;
+import java.awt.Cursor;
 
 public class NotaFinal extends JFrame {
 
@@ -150,6 +151,7 @@ public class NotaFinal extends JFrame {
 		txtDiciplina.setColumns(10);
 
 		JButton btnCalcular = new JButton("RESULTADO");
+		btnCalcular.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		btnCalcular.setFont(new Font("Arial", Font.BOLD, 12));
 		btnCalcular.addActionListener(new ActionListener() {
 			// evento "clicar" no botão, este metodo faz o calculo
@@ -162,6 +164,7 @@ public class NotaFinal extends JFrame {
 		contentPane.add(btnCalcular);
 
 		JButton btnLimpar = new JButton("LIMPAR");
+		btnLimpar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		btnLimpar.setFont(new Font("Arial", Font.BOLD, 12));
 		btnLimpar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -523,6 +526,7 @@ public class NotaFinal extends JFrame {
 		contentPane.add(lblNewLabel);
 
 		btnMenu = new JButton("VOLTAR");
+		btnMenu.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		btnMenu.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Principal principal = new Principal();

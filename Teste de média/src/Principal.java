@@ -24,6 +24,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.*;
 import java.awt.Toolkit;
 import javax.swing.ImageIcon;
+import java.awt.Cursor;
 
 
 public class Principal extends JFrame {
@@ -71,6 +72,7 @@ public class Principal extends JFrame {
 		this.setLocationRelativeTo(null);
 		
 		JButton btnNewButton = new JButton("1\u00B0\r\n SEMESTRE");
+		btnNewButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				NotaFinal notafinal = new NotaFinal();
@@ -83,6 +85,7 @@ public class Principal extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		JButton btnSemestre = new JButton("2\u00B0 SEMESTRE");
+		btnSemestre.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		btnSemestre.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
@@ -92,11 +95,13 @@ public class Principal extends JFrame {
 		contentPane.add(btnSemestre);
 		
 		JButton btnSemestre_1 = new JButton("3\u00B0 \r\nSEMESTRE");
+		btnSemestre_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		btnSemestre_1.setFont(new Font("Arial", Font.BOLD, 11));
 		btnSemestre_1.setBounds(261, 136, 145, 30);
 		contentPane.add(btnSemestre_1);
 		
 		JButton btnSemestre_2 = new JButton("4\u00B0 SEMESTRE");
+		btnSemestre_2.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		btnSemestre_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
