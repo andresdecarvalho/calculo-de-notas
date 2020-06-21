@@ -54,7 +54,7 @@ public class Principal extends JFrame {
 	public Principal() {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(Principal.class.getResource("/icones/calculadora1.png")));
 		
-		addWindowListener(new WindowAdapter() {//ação para modificar a label e mostrr data e hora
+		addWindowListener(new WindowAdapter() {//ação para modificar a label e mostrAr data e hora
 			public void windowActivated(WindowEvent e) {
 				alterarLabel();
 			}
@@ -146,7 +146,7 @@ public class Principal extends JFrame {
 	
 		private void alterarLabel() {// metodo pra mostrar data e hora no lugar da label
 
-		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy E HH:mm");
         LocalDateTime data = LocalDateTime.now();
 
         lblData.setText(data.format(formatador));
