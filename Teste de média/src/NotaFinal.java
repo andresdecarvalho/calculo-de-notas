@@ -93,6 +93,7 @@ public class NotaFinal extends JFrame {
 	private JLabel lblCurso;
 	private JLabel lblTurma;
 	private JButton btnMenu;
+	private JButton btnAjuda;
 
 	/**
 	 * Launch the application.
@@ -538,6 +539,17 @@ public class NotaFinal extends JFrame {
 		btnMenu.setFont(new Font("Arial", Font.BOLD, 12));
 		btnMenu.setBounds(403, 438, 120, 23);
 		contentPane.add(btnMenu);
+		
+		btnAjuda = new JButton("AJUDA");
+		btnAjuda.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ajuda();
+			}
+		});
+		btnAjuda.setToolTipText("Veja como utilizar a ferramenta !");
+		btnAjuda.setFont(new Font("Arial", Font.BOLD, 12));
+		btnAjuda.setBounds(671, 68, 120, 23);
+		contentPane.add(btnAjuda);
 	}// fim do construtor (parte de frames)
 
 	// método para calcular a média de notas
@@ -550,7 +562,8 @@ public class NotaFinal extends JFrame {
 				|| txtN13.getText().isEmpty() || txtN14.getText().isEmpty() || txtN15.getText().isEmpty()
 				|| txtN16.getText().isEmpty() || txtN17.getText().isEmpty() || txtN18.getText().isEmpty()) {
 			JOptionPane.showMessageDialog(null,
-					"Preencha as notas A1 e A2, para obter as notas finais e a situação de aprovação !",
+					"Preencha as notas A1 e A2, para obter as notas finais e a situação de aprovação !"
+					+"\n Em caso de matéria eliminada deixe as notas com os valores zero !",
 					"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);
 		}
 
@@ -801,6 +814,12 @@ public class NotaFinal extends JFrame {
 					JOptionPane.ERROR_MESSAGE);
 		}
 
+	}
+	
+	private void ajuda() {
+		JOptionPane.showMessageDialog(null,
+				"Em caso de matéria eliminada deixe as notas com os valores zero !",
+				"UNIVERSIDADE X - ADS 1B NOITE", JOptionPane.INFORMATION_MESSAGE);
 	}
 
 	// método para limpar as labels
